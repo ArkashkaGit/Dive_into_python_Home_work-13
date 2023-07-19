@@ -3,6 +3,9 @@ class PersonException(Exception):
 
 
 class PersonNameException(PersonException):
+    """
+    Class проверяющий длинну имени или фамиллии на установленные длины
+    """
     def __init__(self):
         pass
 
@@ -11,6 +14,9 @@ class PersonNameException(PersonException):
 
 
 class PersonAgeException(PersonException):
+    """
+    Class проверяющий возраст, Возраст не может быть отритцательным числом и не может привышать определённый лимит
+    """
     def __init__(self):
         pass
 

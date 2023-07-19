@@ -2,6 +2,9 @@ from class_my_excepton import PersonNameException, PersonAgeException
 
 
 class Person:
+    """
+    Class создающий персону с возможностью добавления в архив!
+    """
     def __init__(self, first_name, last_name, age):
         if len(first_name) < 10:
             self.first_name = first_name
@@ -18,6 +21,10 @@ class Person:
             raise PersonAgeException
 
     def birthday(self):
+        """
+        Метод позволяющий увеличивать возраст персоны
+        :return:
+        """
         self.age += 1
         if self.age >= 130:
             raise PersonAgeException
